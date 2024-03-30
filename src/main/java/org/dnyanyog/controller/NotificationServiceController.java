@@ -8,17 +8,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
 public class NotificationServiceController {
 
-	@Autowired
-	NotificationServiceImpl service;
+  @Autowired NotificationServiceImpl service;
 
-	@PostMapping(path = "/api/notification/v1/notify", 
-				consumes = { "application/json","application/xml" }, 
-				produces = { "application/json", "application/xml" })
-	public NotificationResponse notificationController(@RequestBody NotificationRequest request) {
-		return service.sendNotification(request);
-	}
+  @PostMapping(
+      path = "/api/notification/v1/notify",
+      consumes = {"application/json", "application/xml"},
+      produces = {"application/json", "application/xml"})
+  public NotificationResponse notificationController(@RequestBody NotificationRequest request) {
+    return service.sendNotification(request);
+  }
 }

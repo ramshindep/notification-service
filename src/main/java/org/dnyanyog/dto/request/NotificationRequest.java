@@ -4,74 +4,74 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class NotificationRequest {
-	
-	private String clientId;
 
-	private String mode;
-	
-	private String subject;
+  private String clientId;
 
-	private String body;
+  private String mode;
 
-	private String footer;
+  private String subject;
 
-	private String from;
+  private String body;
 
-	private String to;
+  private String footer;
 
-	public String getClientId() {
-		return clientId;
-	}
+  private String from;
 
-	public void setClientId(String clientId) {
-		this.clientId = clientId;
-	}
+  private String to;
 
-	public String getMode() {
-		return mode;
-	}
+  public String getClientId() {
+    return clientId;
+  }
 
-	public void setMode(String mode) {
-		this.mode = mode;
-	}
+  public void setClientId(String clientId) {
+    this.clientId = clientId;
+  }
 
-	public String getSubject() {
-		return subject;
-	}
+  public String getMode() {
+    return mode;
+  }
 
-	public void setSubject(String subject) {
-		this.subject = subject;
-	}
+  public void setMode(String mode) {
+    this.mode = mode;
+  }
 
-	public String getBody() {
-		return body;
-	}
+  public String getSubject() {
+    return subject;
+  }
 
-	public void setBody(String body) {
-		this.body = body;
-	}
+  public void setSubject(String subject) {
+    this.subject = subject;
+  }
 
-	public String getFooter() {
-		return footer;
-	}
+  public String getBody() {
+    return body;
+  }
 
-	public void setFooter(String footer) {
-		this.footer = footer;
-	}
+  public void setBody(String body) {
+    this.body = body;
+  }
 
-	public String getFrom() {
-		return from;
-	}
+  public String getFooter() {
+    return footer;
+  }
 
-	public void setFrom(String from) {
-		this.from = from;
-	}
+  public void setFooter(String footer) {
+    this.footer = footer;
+  }
 
-	public String getTo() {
-		return to;
-	}
+  public String getFrom() {
+    return from;
+  }
 
-	public void setTo(String to) {
-		this.to = to;
-	}
+  public void setFrom(String from) {
+    this.from = from;
+  }
+
+  public String getTo() {
+    return to;
+  }
+
+  public void setTo(String to) {
+    this.to = to;
+  }
 }
