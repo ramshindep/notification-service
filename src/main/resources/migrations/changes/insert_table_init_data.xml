@@ -1,0 +1,17 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+	<changeSet author="Rameshwar Shinde" id="20220721">
+		<insert schemaName="notification_service" tableName="Notification">
+			<column name="notification_code" value="101" />
+			<column name="client_id" value="123" />
+			<column name="mode" value="EMAIL" />
+			<column name="subject" value="a" />
+			<column name="body" value="abcd" />
+			<column name="footer" value="xyz" />
+			<column name="from_email" value="2002rameshwarshinde@gmail.com" />
+			<column name="to_email" value="rameshwarshinde813@gmail.com" />	
+		</insert>
+	</changeSet>
+</databaseChangeLog>

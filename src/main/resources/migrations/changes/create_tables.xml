@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+	<changeSet id="20220721" author="Rameshwar Shinde">
+		<createTable tableName="Notification"
+			schemaName="notification_service">
+			<column name="notification_code" type="int">
+				<constraints primaryKey="true" />
+			</column>
+			<column name="client_id" type="varchar(20)">
+				<constraints nullable="false" />
+			</column>
+			<column name="mode" type="varchar(100)">
+				<constraints nullable="false" />
+			</column>
+			<column name="subject" type="varchar(100)">
+				<constraints nullable="false" />
+			</column>
+			<column name="body" type="varchar(100)">
+				<constraints nullable="false" />
+			</column>
+			<column name="footer" type="varchar(100)">
+				<constraints nullable="false" />
+			</column>	
+				<column name="from_email" type="varchar(100)">
+				<constraints nullable="false" />
+			</column>	
+				<column name="to_email" type="varchar(100)">
+				<constraints nullable="false" />
+			</column>		
+		</createTable>
+	</changeSet>
+	
+</databaseChangeLog>
